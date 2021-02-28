@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane dividerPositions="0.1407035175879397" orientation="VERTICAL" prefHeight="300.0" prefWidth="223.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.kpettke.controllers.GameBoard">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <Label fx:id="result" prefHeight="39.0" prefWidth="221.0" text="Zaczyna X" />
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="253.0" prefWidth="144.0">
+         <children>
+            <GridPane fx:id="grid" gridLinesVisible="true" layoutX="-4.0" layoutY="-1.0" prefHeight="253.0" prefWidth="223.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="btn11" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="277.0" prefWidth="213.0" />
+                  <Button fx:id="btn12" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="254.0" prefWidth="151.0" GridPane.columnIndex="1" />
+                  <Button fx:id="btn13" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="160.0" prefWidth="118.0" GridPane.columnIndex="2" />
+                  <Button fx:id="btn21" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="155.0" prefWidth="181.0" GridPane.rowIndex="1" />
+                  <Button fx:id="btn22" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="149.0" prefWidth="162.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Button fx:id="btn23" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="155.0" prefWidth="154.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Button fx:id="btn31" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="175.0" prefWidth="239.0" GridPane.rowIndex="2" />
+                  <Button fx:id="btn32" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="134.0" prefWidth="158.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Button fx:id="btn33" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="188.0" prefWidth="211.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+         </children></AnchorPane>
+  </items>
+</SplitPane>
